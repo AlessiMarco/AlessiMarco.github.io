@@ -1,4 +1,4 @@
-import { Application } from 'https://cdn.jsdelivr.net/npm/@splinetool/runtime@0.9.209/build/spline.module.js';
+import { Application } from 'https://cdn.jsdelivr.net/npm/@splinetool/runtime@0.9.209/build/spline.module.j';
 
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('canvas3d');
