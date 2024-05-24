@@ -42,6 +42,7 @@ a {
     flex-grow: 1;       /*Indica quanto deve crescere l'elemento*/
     flex-shrink: 1;     /*Indica quanto deve de-crescere l'elemento*/
     flex-basis: 0%;     /*Imposta la dimensione di partenza/naturale che deve impostare il mio elemento*/
+    white-space: nowrap;
 
 }
 
@@ -74,14 +75,16 @@ a {
     justify-content: right;
 }
 
-
 .spline {
     width: 100%;
     height: 100%;
-    flex-grow: 1;
 }
 
-spline-viewer {
-    width: 100%;
-    height: 100%;
+/*mobile device*/
+@media (max-width: 767px)
+{
+    .hero-header{
+        display: none;
+    }   
+
 }
