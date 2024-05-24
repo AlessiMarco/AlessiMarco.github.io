@@ -80,11 +80,33 @@ a {
     height: 100%;
 }
 
+#canvas3dmobile {
+    display: none;
+}
+
+    
+#canvas3ddesktop{
+    display: none;
+}
+
 /*mobile device*/
 @media (max-width: 767px)
 {
     .hero-header{
         display: none;
-    }   
+    }  
+    
+    .desktop3d{
+        display: none;
+    }
+
+}
+
+/* Desktop Device */
+@media (min-width: 768px) {
+
+    .mobile3d {
+        display: none;
+    }
 
 }
