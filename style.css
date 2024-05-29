@@ -80,24 +80,65 @@ a {
     height: 100%;
 }
 
-#canvas3dmobile {
-    display: none;
-}
-
-    
-#canvas3ddesktop{
-    display: none;
-}
-
 /*mobile device*/
 @media (max-width: 767px)
 {
-    .hero-header{
-        display: none;
-    }  
+    body{
+        font-size: 12px;
+    }
+    .hamburger-icon {
+        position: fixed;
+        top: 5vh;
+        right: 12vw;
+        color: wheat;
+    }
+
+    .hamburger-icon span{
+        height: 3px;
+        width: 30px;
+        background-color: white;
+        margin: 6px 0px 6px 0px;
+        display: block;
+    }
     
-    .desktop3d{
-        display: none;
+    .hero-header{
+        display: flex;
+        padding: 0px 0px;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: #181824;
+        overflow: hidden;
+        left: -100%;
+        transition:  0.6s ease-in-out;
+    }
+
+    .menu-open .hero-header{
+        left: 0;
+    }
+
+    .hero-logo{
+        flex-grow: 0;
+        flex-shrink: 0;
+        font-size: 1.6rem;
+    }
+
+    .hero-nav{
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-direction: column;
+    }
+
+    .menu_item{
+        margin: 0px 0px;
+        padding-top: 30px;
+        font-size: 1.6rem;
+    }
+
+    #canvas3ddesktop{
+        display: none !important;
     }
 
 }
@@ -105,8 +146,8 @@ a {
 /* Desktop Device */
 @media (min-width: 768px) {
 
-    .mobile3d {
-        display: none;
+    #canvas3dmobile {
+        display: none !important;
     }
 
 }
