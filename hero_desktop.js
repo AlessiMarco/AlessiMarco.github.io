@@ -4,5 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const { Application } = await import('./DesktopHero/runtime.js');
     const app = new Application(canvas);
     app.load('./DesktopHero/scene.splinecode');
-
 });
+
+
+
