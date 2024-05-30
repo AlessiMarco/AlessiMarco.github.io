@@ -94,11 +94,27 @@ a {
     }
 
     .hamburger-icon span{
-        height: 3px;
+        height: 4px;
         width: 30px;
         background-color: white;
-        margin: 6px 0px 6px 0px;
+        margin: 5px 0px 5px 0px;
         display: block;
+        border-radius: 21px;
+        transition: 0.5s ease-in-out;
+
+    }
+
+    /* Stili per quando la classe è attiva */
+    .type1 { 
+        transform: translate(0%, 220%) rotate(-45deg);
+    }
+    
+    .type2 {
+        opacity: 0;
+    }
+    
+    .type3 {
+        transform: translate(0%, -215%) rotate(45deg);
     }
     
     .hero-header{
